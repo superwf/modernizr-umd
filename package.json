@@ -1,0 +1,31 @@
+{
+  "name": "modernizr-umd",
+  "description": "modernizr for umd usage",
+  "homepage": "git+https://github.com/superwf/modernizr-umd.git",
+  "version": "3.8.0",
+  "main": "index.js",
+  "repository": {
+    "url": "git+https://github.com/superwf/modernizr-umd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/superwf/modernizr-umd/issues"
+  },
+  "keywords": [
+    "modernizr feature detect umd unpkg"
+  ],
+  "devDependencies": {
+    "finepack": "^2.9.1",
+    "modernizr": "^3.8.0",
+    "prettier": "^1.19.1"
+  },
+  "files": [
+    "README.md",
+    "index.js",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "npx modernizr -c node_modules/modernizr/lib/config-all.json -d ./index.js -u",
+    "prepublishOnly": "yarn build"
+  },
+  "license": "MIT"
+}
